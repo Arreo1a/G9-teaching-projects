@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(218, 218, 218);
+    color: white;
+}
+
+.card {
+    position: relative;
+
+    height: 320px;
+    width: 90%;
+    max-width: 520px;
+
+    border-radius: 10px;
+
+    background-color: grey;
+}
+
+.card > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+.card  > .contentContainer {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    width: 100%;
+    height: 120px;
+    padding: 10px 0px;
+
+
+    font-size: 18px;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card  > .contentContainer > .name {
+    font-size: 24px;
+}
+
+.card  > .contentContainer > .name, .gender, .location {
+    margin-left: 10px;
+} 
+
+.card > .wantedDisplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 10px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.card > .wantedDisplay > .text {
+    font-size: 40px;
+    color: red;
+    border: 3px solid red;
+
+    padding: 5px 10px;
+
+    transform: rotate(-10deg);
+}
+
+.card > .priceContainer {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+
+    border-radius: 5px;
+}  
+
+.card > .priceContainer > .price {
+    background-color: rgb(25, 136, 226);
+    padding: 8px 10px;
+    font-size: 24px;
+    border-radius: 3px;
+}

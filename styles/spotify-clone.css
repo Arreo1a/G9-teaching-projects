@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+
+.header > .title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.header > .subtitle {
+    color: grey;
+    color: 20px;
+}
+
+.cardsWrapperContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.cardsWrapperContainer > .cardsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cardsWrapper > .artistCard {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(33, 33, 33);
+    height: 300px;
+    width: 210px;
+    padding: 15px;
+    
+    border-radius: 7px;
+
+    font-weight: 500;
+
+    transition: ease-in-out 130ms;
+}
+
+
+.cardsWrapper  > .artistCard > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+
+    object-fit: cover;
+    object-position: center center;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+
+    margin-bottom: 20px;
+} 
+
+.cardsWrapper   > .artistCard > .name {
+    text-align: start;
+    font-size: 18px;
+
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cardsWrapper   > .artistCard > .artistTxt {
+    width: 100%;
+    text-align: start;
+    color: rgb(151, 151, 151);
+}
+
+.cardsWrapper   > .artistCard > .playButton {
+    position: absolute;
+    top: 53%;
+    right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    background-color: transparent;
+    color: transparent;
+
+
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+
+    font-size: 20px;
+
+    transition: ease-in-out 200ms;
+}
+
+.cardsWrapper  > .artistCard:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.cardsWrapper  > .artistCard:hover > .playButton {
+    top: 52%;
+    background-color: rgba(10, 205, 75, 0.8);
+    color: black;
+}

@@ -1,0 +1,61 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.cardsContainerWrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    width: 90%;
+}
+
+.artistCardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.artistCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(218, 218, 218);
+
+    height: 320px;
+    width: 240px;
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin: 20px;
+}
+
+.artistCard > img {
+    height: 220px;
+    width: 220px;
+    border-radius: 1000000px;
+    margin-bottom: 10px;
+
+    object-fit: cover;
+    object-position: center center;
+}
+
+.artistCard > .text {
+    width: 100%;
+}
+
+.artistCard > .name {
+    font-size: 24px;
+}
+
+.artistCard > .title {
+    font-size: 18px;
+    color: rgb(86, 86, 86);
+}
